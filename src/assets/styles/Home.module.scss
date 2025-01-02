@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
+:root{
+    --initial-gradiente: #39b0fa;
+    --end-gradiente: #ffffff;
+}
+
+.main{
+
+    background-color: var(--end-gradiente);
+
+    .banner{
+        display: flex;
+        background-image: linear-gradient(to bottom, var(--initial-gradiente), var(--end-gradiente));
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 4rem;
+    }
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
