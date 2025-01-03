@@ -5,8 +5,11 @@ import { useState } from "react";
 import ModalConfirm from "../components/Modal/ModalConfirm";
 import logo1 from '../assets/imgs/logo1NoBg.png'
 import logo2 from "../assets/imgs/logo2NoBg.png"
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 export default function CadastrarObra(){
+
+    useDocumentTitle('Cadastro')
 
     const [isOpen, setIsOpen] = useState(false)
 

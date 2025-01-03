@@ -35,12 +35,35 @@
     }
 
     .parallax {
-        height: 600px;
-        background: var(--end-gradiente);
+        height: 500px;
+        background: $end-gradiente;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem auto;
+        gap: 2rem;
+
+        img{
+            box-shadow: 1px 0px 1px 1px rgb(150, 150, 150);
+            border-radius: 9px;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 2rem;
+            width: 40vw;
+            margin-bottom: 0.5rem;
+        }
     }
 }
 
