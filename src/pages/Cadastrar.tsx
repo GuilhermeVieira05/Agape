@@ -6,6 +6,7 @@ import ModalConfirm from "../components/Modal/ModalConfirm";
 import logo1 from '../assets/imgs/logo1NoBg.png'
 import logo2 from "../assets/imgs/logo2NoBg.png"
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import redirecionar from "../utils/redirecionar";
 
 export default function CadastrarObra(){
 
@@ -17,7 +18,7 @@ export default function CadastrarObra(){
         <>
             <Navbar/>
             <div className={styles.main}>
-                <div className={styles.cardServo}>
+                <div onClick={() => redirecionar('/cadastro/servo')} className={styles.cardServo}>
                     <CardCadastro
                     title="Sou Servo"
                     text="Cadastre-se como um servo de uma Obra"
@@ -25,7 +26,7 @@ export default function CadastrarObra(){
                     />
                 </div>
 
-                <div onClick={() => setIsOpen(true)} className={styles.cardObra}>
+                <div onClick={() => redirecionar('/')} className={styles.cardObra}>
                     <CardCadastro
                         title="Sou Obra Jovem"
                         text="Cadastre-se como uma Obra"
@@ -34,7 +35,7 @@ export default function CadastrarObra(){
                 </div>
             </div>
 
-            {isOpen && 
+            {/* {isOpen && 
             <ModalConfirm
             title="Você já possui uma conta?"
             show={isOpen}
@@ -43,7 +44,7 @@ export default function CadastrarObra(){
             onCancel={() => null}
             onConfirm={() => null}
             />
-            }
+            } */}
         </>
     )
 }
