@@ -1,6 +1,7 @@
 import useScrolled from '../../hooks/useScrolled'
 import useScrolledColor from '../../hooks/useScrolledColor'
 import styles from './index.module.scss'
+import redirecionar from '../../utils/redirecionar'
 
 const Navbar = () => {
 
@@ -10,17 +11,16 @@ const Navbar = () => {
     return(
         <>
             <div 
-            className={styles.main}
+            className={!isScrolled ? styles.main : styles.mainScrolled}
             style={{backgroundColor: bgColor}}
             >
                 <div className={styles.menuEsquerda}>
-                    <a href="/" className={styles.title}>Ágape</a>
+                    <a onClick={() => redirecionar('/')} className={styles.title}>Ágape</a>
                 </div>
 
                 <div className={styles.menuDireita}>
-                    <a href="/login">Login</a>
-                    <a href="/cadastro">Cadastrar</a>
-                    <a href=""></a>
+                    <a onClick={() => redirecionar('/login')}>Login</a>
+                    <a onClick={() => redirecionar('/cadastro')}>Cadastrar</a>
                 </div>
             </div>
         </>
