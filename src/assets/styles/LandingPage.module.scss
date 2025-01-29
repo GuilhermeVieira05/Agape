@@ -8,6 +8,7 @@
     background-color: $end-gradiente;
     text-align: center;
 
+    
     .banner{
         display: flex;
         position: relative;
@@ -51,10 +52,9 @@
         align-items: center;
         justify-content: center;
         margin: 2rem auto;
-        gap: 2rem;
+        gap: 2.5rem;
 
         img{
-            box-shadow: 1px 0px 1px 1px rgb(150, 150, 150);
             border-radius: 9px;
         }
 

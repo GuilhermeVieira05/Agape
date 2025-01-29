@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from '../pages/Home'
-import CadastrarObra from '../pages/Cadastrar'
+import LandingPage from '../pages/LandingPage'
+import Cadastrar from '../pages/Cadastrar'
 import Login from '../pages/Login'
 import CadastrarServo from '../pages/CadastrarServo'
+import CadastrarObra from '../pages/CadastrarObra'
+import Home from '../pages/Home'
 
 function AppRoutes() {
 
@@ -10,10 +12,12 @@ function AppRoutes() {
 
     <Router>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/cadastro' element={<CadastrarObra/>} />
+        <Route path='/' element={<LandingPage/>}></Route>
+        <Route path='/cadastro' element={<Cadastrar/>} />
         <Route path='/login' element={<Login />} />
         <Route path='/cadastro/servo' element={<CadastrarServo/>}/>
+        <Route path='/cadastro/obra' element={<CadastrarObra/>}/>
+        <Route path='/home' element={<Home/>}/>
       </Routes>
     </Router>
     

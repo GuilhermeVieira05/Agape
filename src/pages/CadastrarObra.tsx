@@ -3,13 +3,13 @@ import styles from "../assets/styles/CadastrarServo.module.scss"
 import CadastroServoForm from "../components/Forms/CadastroForm/CadastroServoForm"
 import quotes from "../assets/data/quotes.json"
 import getRandom from "../utils/getRandom"
-import redirecionar from "../utils/redirecionar"
+import CadastroObra from "../components/Forms/CadastroForm/CadastroObraForm"
 
-const CadastrarServo = () =>{
+const CadastrarObra = () =>{
     const { text, image} = quotes[getRandom(quotes.length)]
 
     const handleSubmit = () =>{
-        redirecionar('/home')
+
     }
 
     return(
@@ -17,9 +17,8 @@ const CadastrarServo = () =>{
         <Navbar/>
         <div className={styles.main}>
             <div className={styles.form}>
-                <h1 className={styles.title}>Cadastro - Servo</h1>
-                <CadastroServoForm
-                onSubmit={handleSubmit}
+                <h1 className={styles.title}>Cadastro - Obra</h1>
+                <CadastroObra
                 />
             </div>
             <div className={styles.card}>
@@ -34,4 +33,4 @@ const CadastrarServo = () =>{
     )
 }
 
-export default CadastrarServo
+export default CadastrarObra

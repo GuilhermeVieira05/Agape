@@ -1,7 +1,8 @@
-import useScrolled from '../../hooks/useScrolled'
-import useScrolledColor from '../../hooks/useScrolledColor'
+import useScrolled from '../../../hooks/useScrolled'
+import useScrolledColor from '../../../hooks/useScrolledColor'
 import styles from './index.module.scss'
-import redirecionar from '../../utils/redirecionar'
+import redirecionar from '../../../utils/redirecionar'
+
 
 const Navbar = () => {
 

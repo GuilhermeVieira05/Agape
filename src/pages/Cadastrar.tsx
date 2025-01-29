@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/NavbarPrincipal";
 import styles from "../assets/styles/CadastrarObra.module.scss"
 import CardCadastro from "../components/Cards/CardCadastro";
 import { useState } from "react";
@@ -8,7 +8,7 @@ import logo2 from "../assets/imgs/logo2NoBg.png"
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import redirecionar from "../utils/redirecionar";
 
-export default function CadastrarObra(){
+export default function Cadastrar(){
 
     useDocumentTitle('Cadastro')
 
@@ -26,7 +26,7 @@ export default function CadastrarObra(){
                     />
                 </div>
 
-                <div onClick={() => redirecionar('/')} className={styles.cardObra}>
+                <div onClick={() => redirecionar('/cadastro/obra')} className={styles.cardObra}>
                     <CardCadastro
                         title="Sou Obra Jovem"
                         text="Cadastre-se como uma Obra"

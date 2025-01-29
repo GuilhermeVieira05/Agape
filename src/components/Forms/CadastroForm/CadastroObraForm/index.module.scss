@@ -1,0 +1,87 @@
+.container {
+    width: 50%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+
+    .progressBar {
+      display: flex;
+      margin-bottom: 20px;
+    
+      .step {
+        flex: 1;
+        height: 5px;
+        background-color: #ccc;
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    
+      .activeStep {
+        flex: 1;
+        height: 5px;
+        background-color: blue;
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .stepContainer {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    
+    
+        &:invalid{
+            border-color: red;
+        }
+    
+        &:valid{
+            border-color: green;
+        }
+
+      }
+      
+      .preview {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+      
+        .button {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: blue;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      
+          &:hover {
+            background-color: darkblue;
+          }
+        }
+      }
+    }
+    
+    
+  }
+  
